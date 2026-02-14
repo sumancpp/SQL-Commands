@@ -3,6 +3,7 @@ CREATE TABLE emp (
     emp_name VARCHAR2(30),
     city VARCHAR2(20)
 );
+
 INSERT INTO emp VALUES (1, 'Akash', 'Hooghly');
 INSERT INTO emp VALUES (2, 'Rahul', 'Kolkata');
 INSERT INTO emp VALUES (3, 'Rohit', 'Howrah');
