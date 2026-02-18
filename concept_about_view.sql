@@ -4,6 +4,7 @@ CREATE TABLE Members (
     city VARCHAR2(50),
     mobno VARCHAR2(15)
 );
+
 INSERT INTO Members VALUES (1, 'X', 'Howrah', '9876543210');
 INSERT INTO Members VALUES (2, 'Y', 'Kolkata', '9876543220');
 INSERT INTO Members VALUES (3, 'Z', 'Delhi', '9876543230');
