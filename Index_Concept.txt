@@ -14,11 +14,12 @@ INSERT INTO Students VALUES (6, 'Shreya', 'Hooghly');
 SELECT * FROM Students;
 
 CREATE INDEX idx_name ON Students(name);
+
 CREATE INDEX idx_name_address ON Students(name, address);
 
 SELECT * FROM Students ORDER BY name;
-SELECT * FROM Students ORDER BY address;
 
+SELECT * FROM Students ORDER BY address;
 
 SELECT * FROM Students WHERE name = 'Shreya';
 
