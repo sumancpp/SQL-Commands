@@ -1,0 +1,24 @@
+CREATE TABLE Students (
+    roll_number INT PRIMARY KEY,
+    name VARCHAR(50),
+    address VARCHAR(100)
+);
+
+INSERT INTO Students VALUES (1, 'Suman', 'Kolkata');
+INSERT INTO Students VALUES (2, 'Rahul', 'Delhi');
+INSERT INTO Students VALUES  (3, 'Priya', 'Mumbai');
+INSERT INTO Students VALUES (4, 'Ankit', 'Chennai');
+INSERT INTO Students VALUES (5, 'Shreya', 'Howrah');
+INSERT INTO Students VALUES (6, 'Shreya', 'Hooghly');
+
+SELECT * FROM Students;
+
+CREATE INDEX idx_name ON Students(name);
+CREATE INDEX idx_name_address ON Students(name, address);
+
+SELECT * FROM Students ORDER BY name;
+SELECT * FROM Students ORDER BY address;
+
+
+SELECT * FROM Students WHERE name = 'Shreya';
+
