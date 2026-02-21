@@ -1,0 +1,95 @@
+CREATE TABLE EMPLOYEE (
+    empid INT PRIMARY KEY,
+    ename VARCHAR(50),
+    city VARCHAR(50),
+    supervisorid INT
+);
+
+CREATE TABLE EMPSAL (
+    Eno INT,
+    salary INT
+);
+
+-- Insert Data
+INSERT INTO EMPLOYEE VALUES (1, 'Rahul', 'Kolkata', NULL);
+INSERT INTO EMPLOYEE VALUES (2, 'Amit', 'Delhi', 1);
+INSERT INTO EMPLOYEE VALUES (3, 'Suman', 'Kolkata', 1);
+
+INSERT INTO EMPSAL VALUES (1, 50000);
+INSERT INTO EMPSAL VALUES (2, 35000);
+INSERT INTO EMPSAL VALUES (4, 42000);
+
+-- View Tables
+SELECT * FROM EMPLOYEE;
+SELECT * FROM EMPSAL;
+
+-- CROSS JOIN
+SELECT * FROM EMPLOYEE, EMPSAL;
+
+-- EQUI JOIN
+SELECT * 
+FROM EMPLOYEE, EMPSAL 
+WHERE EMPLOYEE.empid = EMPSAL.Eno;
+
+-- INNER JOIN
+SELECT * 
+FROM EMPLOYEE e 
+INNER JOIN EMPSAL s 
+ON e.empid = s.Eno;
+
+-- LEFT JOIN
+SELECT * 
+FROM EMPLOYEE e 
+LEFT JOIN EMPSAL s 
+ON e.empid = s.Eno;
+
+-- RIGHT JOIN
+SELECT * 
+FROM EMPLOYEE e 
+RIGHT JOIN EMPSAL s 
+ON e.empid = s.Eno;
+
+-- SELF JOIN (Employee + Supervisor)
+SELECT 
+    e.ename AS Employee_Name,
+    s.ename AS Supervisor_Name
+FROM EMPLOYEE e
+LEFT JOIN EMPLOYEE s
+ON e.supervisorid = s.empid;
+
+-- (IMPORTANT) First create PROJECT and WORKS tables for Question V
+CREATE TABLE PROJECT (
+    Pno INT PRIMARY KEY,
+    pname VARCHAR(50),
+    plocation VARCHAR(50)
+);
+
+CREATE TABLE WORKS (
+    Eno INT,
+    Pno INT,
+    Duration INT
+);
+
+INSERT INTO PROJECT VALUES (101,'BankApp','Kolkata');
+INSERT INTO PROJECT VALUES (102,'ShopSite','Delhi');
+INSERT INTO PROJECT VALUES (103,'AITool','Kolkata');
+
+INSERT INTO WORKS VALUES (1,101,12);
+INSERT INTO WORKS VALUES (2,102,6);
+INSERT INTO WORKS VALUES (3,103,9);
+
+-- Question V Solution
+SELECT 
+    e.ename AS Employee_Name,
+    p.pname AS Project_Name
+FROM EMPLOYEE e
+JOIN WORKS w ON e.empid = w.Eno
+JOIN PROJECT p ON w.Pno = p.Pno
+WHERE p.plocation = 'Kolkata';
+
+-- Drop Tables
+DROP TABLE WORKS;
+DROP TABLE PROJECT;
+DROP TABLE EMPSAL;
+DROP TABLE EMPLOYEE;
+
