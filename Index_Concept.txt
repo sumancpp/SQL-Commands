@@ -1,4 +1,4 @@
-CREATE TABLE Students (
+CREATE TABLE Students(
     roll_number INT PRIMARY KEY,
     name VARCHAR(50),
     address VARCHAR(100)
