@@ -1,0 +1,40 @@
+CREATE TABLE NEWBANK(
+    Branchid INT PRIMARY KEY,
+    branchname VARCHAR(50),
+    city VARCHAR(50),
+    asset INT
+);
+
+INSERT INTO NEWBANK VALUES (1,'Howrah_Main','Howrah',50000);
+INSERT INTO NEWBANK VALUES (2,'Kolkata_Central','Kolkata',80000);
+INSERT INTO NEWBANK VALUES (3,'Delhi_Main','Delhi',60000);
+INSERT INTO NEWBANK VALUES (4,'Kolkata_South','Kolkata',90000);
+INSERT INTO NEWBANK VALUES (5,'Mumbai_Main','Mumbai',40000);
+
+SELECT * FROM NEWBANK;
+
+SELECT 
+COUNT(*) AS Total_Records,
+MAX(asset) AS Max_Asset,
+MIN(asset) AS Min_Asset,
+AVG(asset) AS Avg_Asset,
+SUM(asset) AS Total_Asset
+FROM NEWBANK;
+
+SELECT city, SUM(asset) AS City_Asset FROM NEWBANK GROUP BY city;
+SELECT city, SUM(asset) AS City_Asset FROM NEWBANK GROUP BY city having sum (asset) > 60000;
+
+
+SELECT AVG(asset) AS Kolkata_Avg_Asset FROM NEWBANK WHERE city = 'Kolkata';
+
+SELECT branchname, asset FROM NEWBANK WHERE asset > (SELECT AVG(asset) FROM NEWBANK);//sub query
+
+SELECT 
+LPAD('NEWBank',8,'*'),
+RPAD('NEWBank',8,'*'),
+LTRIM('   NEWBank'),
+RTRIM('NEWBank   '),
+SUBSTR('Kolkata_Branch',1,7)
+FROM DUAL;
+
+
