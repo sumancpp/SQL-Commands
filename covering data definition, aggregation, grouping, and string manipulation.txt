@@ -24,7 +24,6 @@ FROM NEWBANK;
 SELECT city, SUM(asset) AS City_Asset FROM NEWBANK GROUP BY city;
 SELECT city, SUM(asset) AS City_Asset FROM NEWBANK GROUP BY city having sum (asset) > 60000;
 
-
 SELECT AVG(asset) AS Kolkata_Avg_Asset FROM NEWBANK WHERE city = 'Kolkata';
 
 SELECT branchname, asset FROM NEWBANK WHERE asset > (SELECT AVG(asset) FROM NEWBANK);//sub query
