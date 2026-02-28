@@ -1,4 +1,4 @@
-CREATE TABLE NEWBANK(
+CREATE TABLE NEWBANK (
     Branchid INT PRIMARY KEY,
     branchname VARCHAR(50),
     city VARCHAR(50),
