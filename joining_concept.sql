@@ -1,7 +1,7 @@
 CREATE TABLE emp (
     emp_no NUMBER(2) PRIMARY KEY,
     emp_name VARCHAR2(40),
-    city VARCHAR2(20)
+    city VARCHAR2(40)
 );
 
 INSERT INTO emp VALUES (1, 'Akash', 'Hooghly');
