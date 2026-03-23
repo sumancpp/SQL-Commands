@@ -1,5 +1,5 @@
 CREATE TABLE DEPOSITOR (
-    account_no NUMBER(5) PRIMARY KEY,
+    account_no NUMBER(10) PRIMARY KEY,
     name VARCHAR2(20),
     amt NUMBER(10)
 );
