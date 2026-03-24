@@ -1,7 +1,7 @@
 CREATE TABLE student (
     rollno NUMBER(2) PRIMARY KEY,
     name VARCHAR2(20),
-    address VARCHAR2(40),
+    address VARCHAR2(50),
     dob DATE
 );
 
