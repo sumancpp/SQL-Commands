@@ -17,7 +17,7 @@ CREATE TABLE emp_sal (
 
 INSERT INTO emp_sal VALUES (1, 45000);
 INSERT INTO emp_sal VALUES (2, 40000);
-INSERT INTO emp_sal VALUES (4, 35000);
+INSERT INTO emp_sal VALUES (4, 30000);
 
 SELECT * FROM emp_sal;
 
