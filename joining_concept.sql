@@ -5,7 +5,7 @@ CREATE TABLE emp (
 );
 
 INSERT INTO emp VALUES (1, 'Akash', 'Hooghly');
-INSERT INTO emp VALUES (2, 'Rahul', 'Kolkata');
+INSERT INTO emp VALUES (2, 'Mehfooz', 'Kolkata');
 INSERT INTO emp VALUES (3, 'Rohit', 'Howrah');
 
 SELECT * FROM emp;
