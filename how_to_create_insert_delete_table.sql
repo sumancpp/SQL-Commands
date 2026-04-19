@@ -15,6 +15,6 @@ DELETE FROM student;
 DROP TABLE student;
 SELECT * FROM tab;
 ALTER TABLE student ADD passportno NUMBER(12) UNIQUE;
-INSERT INTO student VALUES (3, 'Nayan', 'Uluberia', DATE '2004-04-04', 1223456786);
+INSERT INTO student VALUES (3, 'Mehfooz', 'Uluberia', DATE '2004-04-04', 1223456786);
 INSERT INTO student VALUES (4, 'Riju', 'Arambagh', DATE '2005-05-05',  8654361223);
 ALTER TABLE student DROP COLUMN address;
