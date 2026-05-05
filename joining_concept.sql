@@ -1,6 +1,6 @@
 CREATE TABLE emp (
     emp_no NUMBER(2) PRIMARY KEY,
-    emp_name VARCHAR2(40),
+    emp_name VARCHAR2(50),
     city VARCHAR2(40)
 );
 
