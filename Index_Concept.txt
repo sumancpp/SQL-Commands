@@ -6,7 +6,7 @@ CREATE TABLE Students(
 
 INSERT INTO Students VALUES (1, 'Suman', 'Kolkata');
 INSERT INTO Students VALUES (2, 'Rahul', 'Delhi');
-INSERT INTO Students VALUES  (3, 'Priya', 'Mumbai');
+INSERT INTO Students VALUES (3, 'Priya', 'Mumbai');
 INSERT INTO Students VALUES (4, 'Ankit', 'Chennai');
 INSERT INTO Students VALUES (5, 'Shreya', 'Howrah');
 INSERT INTO Students VALUES (6, 'Shreya', 'Hooghly');
