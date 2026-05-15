@@ -6,7 +6,7 @@ CREATE TABLE student (
 );
 
 DESC student;
-INSERT INTO student VALUES (1, 'Suman', 'Khanakul', DATE '2004-04-04');
+INSERT INTO student VALUES (1, 'Suman', 'Arambagh', DATE '2004-04-04');
 INSERT INTO student VALUES (2, 'Amit', 'Howrah', DATE '2003-01-15');
 SELECT * FROM student;
 SELECT name, address FROM student;
