@@ -33,6 +33,7 @@ SELECT * FROM emp, emp_sal WHERE emp.emp_no = emp_sal.emp_no(+) UNION SELECT * F
 
 
 drop table emp
+    
 drop table emp_sal
 
 
