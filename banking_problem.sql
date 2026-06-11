@@ -9,6 +9,7 @@ CREATE TABLE BORROWER (
     name VARCHAR2(20),
     amt NUMBER(10)
 );
+
 DESC DEPOSITOR 
 INSERT INTO DEPOSITOR VALUES (101, 'Suman', 50000);
 INSERT INTO DEPOSITOR VALUES (102, 'Puja', 30000);
@@ -21,9 +22,20 @@ INSERT INTO BORROWER VALUES (203, 'Riju', 25000);
 SELECT * FROM DEPOSITOR;
 SELECT * FROM BORROWER;
 
+-- Persons who have both a bank account and a loan
 SELECT name FROM DEPOSITOR INTERSECT SELECT name FROM BORROWER;
+
+-- Persons who have an account but not a loan
 SELECT name FROM DEPOSITOR MINUS SELECT name FROM BORROWER;
+-- (Use EXCEPT instead of MINUS in SQL Server/PostgreSQL)
+
+-- Persons who either have an account or a loan
 SELECT name FROM DEPOSITOR UNION SELECT name FROM BORROWER;
+
+-- UNION (removes duplicates)
+SELECT name FROM DEPOSITOR UNION SELECT name FROM BORROWER;
+
+-- UNION ALL (keeps duplicates)
 SELECT name FROM DEPOSITOR UNION ALL SELECT name FROM BORROWER;
 
 
