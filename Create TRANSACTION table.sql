@@ -35,4 +35,4 @@ END;
 INSERT INTO TRANSACTION
 (description, product, quantity, amount)
 VALUES
-('Mobile Purchase', 'Mobile', 2, 30000);
+('Mobile Purchase', 'Mobile', 2, 40000);
