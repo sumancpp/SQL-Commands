@@ -1,5 +1,4 @@
 -- I. Create BANK table
-
 CREATE TABLE BANK (
     Branchid INT PRIMARY KEY,
     branchname VARCHAR(50),
