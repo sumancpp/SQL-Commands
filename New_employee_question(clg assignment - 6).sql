@@ -11,7 +11,7 @@ CREATE TABLE EMP (
 INSERT INTO EMP VALUES ('E1', 'Amit', 'CSE');
 INSERT INTO EMP VALUES ('E2', 'Sumit', 'ECE');
 INSERT INTO EMP VALUES ('E1', 'Amit', 'CSE');
-INSERT INTO EMP VALUES ('E3', 'Ram', 'ME');
+INSERT INTO EMP VALUES ('E3', 'Abhisekh', 'ME');
 
 ----------------------------------------------------
 -- I. Create index on EMPNO
