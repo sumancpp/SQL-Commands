@@ -41,11 +41,11 @@ VALUES ('Rita', 'Kolkata');
 -- Update through view
 UPDATE EMP_CITY2
 SET Emp_city = 'Howrah'
-WHERE Empname = 'Rita';
+WHERE Empname = 'Rikta';
 
 -- Delete through view
 DELETE FROM EMP_CITY2
-WHERE Empname = 'Rita';
+WHERE Empname = 'Rikta';
 
 ----------------------------------------------------
 -- III. Create View EMP_PRJ
