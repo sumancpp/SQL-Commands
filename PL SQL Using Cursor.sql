@@ -79,5 +79,5 @@ EXEC INSERT_STUDENT(
     'Rahul',
     'Howrah',
     '9876543210',
-    '15-MAY-2003'
+    '15-MAY-2004'
 );
