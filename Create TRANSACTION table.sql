@@ -5,7 +5,7 @@
 CREATE TABLE TRANSACTION (
     transaction_id NUMBER,
     description VARCHAR2(100),
-    product VARCHAR2(50),
+    product VARCHAR2(40),
     quantity NUMBER,
     amount NUMBER(10,2)
 );
