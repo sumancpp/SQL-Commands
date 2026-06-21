@@ -10,6 +10,7 @@ BEGIN
 END;
 /
 
+
 II. PL/SQL Code to Calculate Factorial of a Number
 
 DECLARE
