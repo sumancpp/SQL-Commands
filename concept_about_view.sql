@@ -53,7 +53,7 @@ SELECT branch, SUM(asset) FROM Bank GROUP BY branch;
 SELECT branch, SUM(asset) FROM Bank GROUP BY branch HAVING SUM(asset) > 125;
 
 
-//Deletes table and its data permanently
+/****Deletes table and its data permanently****/
 DROP TABLE Members;
 DROP TABLE teacher;
 DROP TABLE Bank;
