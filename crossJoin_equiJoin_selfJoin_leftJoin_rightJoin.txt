@@ -58,6 +58,7 @@ LEFT JOIN EMPLOYEE s
 ON e.supervisorid = s.empid;
 
 -- (IMPORTANT) First create PROJECT and WORKS tables for Question V
+
 CREATE TABLE PROJECT (
     Pno INT PRIMARY KEY,
     pname VARCHAR(50),
@@ -79,6 +80,7 @@ INSERT INTO WORKS VALUES (2,102,6);
 INSERT INTO WORKS VALUES (3,103,9);
 
 -- Question V Solution
+
 SELECT 
     e.ename AS Employee_Name,
     p.pname AS Project_Name
@@ -88,6 +90,7 @@ JOIN PROJECT p ON w.Pno = p.Pno
 WHERE p.plocation = 'Kolkata';
 
 -- Drop Tables
+
 DROP TABLE WORKS;
 DROP TABLE PROJECT;
 DROP TABLE EMPSAL;
