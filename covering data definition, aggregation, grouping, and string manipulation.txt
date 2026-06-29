@@ -1,6 +1,6 @@
 CREATE TABLE NEWBANK (
     Branchid INT PRIMARY KEY,
-    branchname VARCHAR(50),
+    branchname VARCHAR(30),
     city VARCHAR(50),
     asset INT
 );
